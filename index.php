@@ -7,6 +7,13 @@
     <title>Login</title>
 </head>
 <body>
-    jonas paulino
+    <div class="container">
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" placeholder="Digite seu email">
+            <input type="password" placeholder="Digite seu senha">
+            <input type="submit" value="Entrar">
+        </form>
+    </div>    
 </body>
 </html>

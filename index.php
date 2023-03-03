@@ -7,6 +7,13 @@
     <title>Login</title>
 </head>
 <body>
-    jonas
+    <div class="container">
+        <form method="POST" action="./model/login.php">
+            <h3>Login</h3>
+            <input type="email" placeholder="Digite seu email" name="email">
+            <input type="password" placeholder="Digite seu senha" name="password">
+            <input type="submit" value="Entrar">
+        </form>
+    </div>    
 </body>
 </html>

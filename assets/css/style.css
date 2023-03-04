@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#containerbackground{
+    width: 100vw;
+    height: 100vh;
+    background: #1cbb9b;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: #bb1c1c;
+    width: 500px;
+    height: 550px;
+    justify-content: center;
+    text-align: center;
+}
+#logo{
+    margin-top: 15px;
+    width: 40%;
+    height: 50%;
+}

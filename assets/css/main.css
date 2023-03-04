@@ -10,9 +10,19 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn{
    font-size: 15px;
    margin-top: 5%;
+   
+}
+
+.box-img{
+    width: 100%;
+}
+
+.imagem{
+   left: 50%;
 }

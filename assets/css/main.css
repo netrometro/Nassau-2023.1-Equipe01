@@ -1,0 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.box-left{
+    background-color:#1CBB9B;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+   font-size: 15px;
+   margin-top: 5%;
+}

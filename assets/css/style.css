@@ -1,6 +1,7 @@
 :root {
     --green: #1cbb9b;
     --greenHover: #097a64;
+    --color: #C5C5C5
   }
 
 *{
@@ -13,6 +14,7 @@
     width: 100vw;
     height: 100vh;
     background: var(--green);
+
 }
 
 .container{
@@ -40,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .containerLogin form{
@@ -82,6 +85,17 @@
     background: var(--greenHover);
     border: none;
     color: white;
+}
+.containerLogin footer{
+    bottom: 0;
+    position: fixed;
+    height: 30px;
+    color: var(--color) ;
+}
+
+.containerLogin footer h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
 }
 
 /* fim de login */

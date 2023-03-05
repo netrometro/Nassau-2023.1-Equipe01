@@ -10,7 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=,, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <title>CashLock - Login</title>
 </head>
 <body>
     <div class="containerLogin">
@@ -21,6 +22,9 @@
             <input type="password" placeholder="Digite seu senha" name="password">
             <input type="submit" value="Entrar">
         </form>
-    </div>    
+        <footer>
+            <h6>Professor Ewerton - Projeto: CashLock - Alunos: Jonas, Valdênio e Rafael</h6>
+        </footer> 
+    </div>   
 </body>
 </html>

@@ -29,7 +29,7 @@
             <br>
             <a class="btn btn-main" href="">Fornecedores</a>
             <br>
-            <a class="btn btn-main" href="">Receber</a>
+            <a class="btn btn-main" href="./consulta_receber.php">Receber</a>
             <br>
             <a class="btn btn-main" href="">Pagar</a>
         </div>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <title>CashLock - Login</title>
+
 </head>
 <body>
     <div class="containerLogin">

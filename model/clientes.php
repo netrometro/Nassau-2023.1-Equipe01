@@ -1,17 +1,18 @@
 <?php
 
  require('Config.php');
+try {
+ $stmt = $conn->prepare("SELECT * FROM clientes");
+$stmt->execute();
 
- $sql = $conn->prepare("SELECT * FROM clientes");
-        $sql->execute();
-
-        if($sql->rowCount() > 0 ){
-            $clientes = $sql->fetch( PDO::FETCH_ASSOC );
-
-            print_r ($clientes);
-        
-        
-        }
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  foreach(new RecursiveArrayIterator($stmt->fetchAll()) as $k=>$v) {
+    print_r ($v);
+  }
+} catch(PDOException $e) {
+  echo "Error: " . $e->getMessage();
+}
+$conn = null;
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +21,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
-    
+    <table></table>
 </body>
 </html>

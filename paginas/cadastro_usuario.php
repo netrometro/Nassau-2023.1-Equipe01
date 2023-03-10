@@ -17,38 +17,38 @@
       
         <div class="linha-completa">
             <label for="nome">Nome do usuário</label>
-            <input type="text" name="nome" id="name" placeholder="Insira seu nome">
+            <input type="text" name="nome" placeholder="Insira seu nome">
         </div>
 
         <div class="linha-completa">
             <label for="e-mail">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+            <input type="email" name="email" placeholder="Insira seu e-mail">
         </div>
 
         <div class="meia-linha espaçamento">
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" placeholder="Insira seu CPF">
+            <input type="text" name="cpf" placeholder="Insira seu CPF">
         </div>
 
         <div class="meia-linha">
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone">
+            <input type="tel" name="telefone" placeholder="Insira seu telefone">
         </div>
 
         <div class="linha-completa">
           <label for="endereco">Endereço</label>
-          <input type="text" name="endereco" id="endereco" placeholder="Insira seu endereço">
+          <input type="text" name="endereco" placeholder="Insira seu endereço">
         </div>
 
         <div class="meia-linha espaçamento">
           <label for="senha">Senha</label>
-          <input type="password" name="senha" id="password" placeholder="Insira a senha">
+          <input type="password" name="senha" placeholder="Insira a senha">
         </div>
 
         <!--
         <div class="meia-linha">
           <label for="passwordconfirm">Confirmar senha</label>
-          <input type="password" name="passwordconfirm" id="password" placeholder="Insira a senha">
+          <input type="password" name="passwordconfirm" placeholder="Insira a senha">
         </div>
         -->
         <div class="linha-completa">

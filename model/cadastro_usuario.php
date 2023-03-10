@@ -6,22 +6,22 @@
     $email = FILTER_INPUT(INPUT_POST,'email');
     $cpf = FILTER_INPUT(INPUT_POST,'cpf');
     $telefone = FILTER_INPUT(INPUT_POST,'telefone');
-    $endereco = FILTER_INPUT(INPUT_POST,'endereço');
+    $endereco = FILTER_INPUT(INPUT_POST,'endereco');
     $password = FILTER_INPUT(INPUT_POST,'senha');
 
-  /*  if(isset($_POST['submit']))
-{
-include_once('config.php')
+if($name &&  $email && $password){
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$cpf = $_POST['cpf'];
-$telefone = $_POST['telefone'];
-$endereco = $_POST['endereco'];
-$password = $_POST['password'];
-
-$result = mysql_query($conn, "INSERT INTO (nome da tabela do BD)(nome,email,cpf,telefone,endereco,password) 
-VALUES ('$name','$email','$cpf','$telefone','$endereco','$password')"); 
+  $sql = $conn->prepare("INSERT INTO usuario (nome,email,cpf,telefone,endereco,senha) VALUES (:nome,:email,:cpf,:telefone,:endereco,:senha)");
+        
+        $sql->bindValue(':nome',$name);
+        $sql->bindValue(':email',$email);
+        $sql->bindValue(':cpf',$cpf);
+        $sql->bindValue(':telefone',$telefone);
+        $sql->bindValue(':endereco',$endereco);
+        $sql->bindValue(':senha',$password);
+        $sql->execute();
+  
 }
-*/
+  
+
 ?>

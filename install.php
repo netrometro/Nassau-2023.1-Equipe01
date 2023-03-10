@@ -26,7 +26,32 @@
           echo "Error creating table: " . $conn->error;
         }
 
-        
+         //inclusão de clientes
+
+
+         $sql = "INSERT INTO clientes (nome, endereco, telefone) VALUES ('Jonas', 'Dom pedro', '819440288922')";
+            
+         if ($conn->query($sql) === TRUE) {
+           echo "Inserir cliente feito successfully";
+         } else {
+           echo "Error creating table: " . $conn->error;
+         }
+
+         $sql = "INSERT INTO clientes (nome, endereco, telefone) VALUES ('Ewerton', 'Dom Pedro II', '8194404040')";
+            
+         if ($conn->query($sql) === TRUE) {
+           echo "Inserir cliente feito successfully";
+         } else {
+           echo "Error creating table: " . $conn->error;
+         }
+
+         $sql = "INSERT INTO clientes (nome, endereco, telefone) VALUES ('Rafael', 'Dom carlos', '8195589008')";
+            
+         if ($conn->query($sql) === TRUE) {
+           echo "Inserir cliente feito successfully";
+         } else {
+           echo "Error creating table: " . $conn->error;
+         }
        
         $conn->close();
         ?>

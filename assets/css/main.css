@@ -3,26 +3,44 @@ html, body{
     padding: 0;
 }
 
+.container{
+    display: flex;
+}
+
 .box-left{
     background-color:#1CBB9B;
-    width: 40%;
     height: 100vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn{
-   font-size: 15px;
-   margin-top: 5%;
-   
+    border-radius: 0.6em;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-main {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+}
+
+.btn-main:hover {
+    box-shadow: 0 0 10px 0 #3498db inset;
+    color: black;
 }
 
 .box-img{
-    width: 100%;
-}
-
-.imagem{
-   left: 50%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
 }

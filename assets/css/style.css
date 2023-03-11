@@ -99,3 +99,61 @@
 }
 
 /* fim de login */
+
+
+/* Inicio contas a receber*/
+.containerReceber{
+    padding: 10px;
+}
+.containerReceber header{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.containerReceber header button{
+    height: 40px;
+    width: 200px;
+}
+
+
+.containerReceber header button{
+    background: var(--green);
+    border: none;
+    color: black;
+}
+
+.containerReceber header button:hover{
+    background: var(--greenHover);
+    border: none;
+    color: white;
+}
+
+.containerReceber .consulta table{
+    margin-top: 20px;
+}
+
+.containerReceber .consulta table th {
+    padding: 10px;
+    background-color: var(--green);
+}
+
+.containerReceber .consulta table tr td {
+    text-align: center;
+    padding: 10px;
+}
+
+.containerReceber .consulta table tr:hover td {
+    background-color: #EEE;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    background: var(--greenHover);
+    border-radius: 10px;
+}
+
+/* Fim Titulos receber */

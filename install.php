@@ -14,7 +14,7 @@
         
         // sql to create table
         $sql = "CREATE OR REPLACE TABLE clientes (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         nome VARCHAR(255) NOT NULL,
         endereco VARCHAR(255) NOT NULL,
         telefone VARCHAR(11)
@@ -53,5 +53,57 @@
            echo "Error creating table: " . $conn->error;
          }
        
+
+
+        //criar banco de usuario
+        // sql to create table
+        $sql = "CREATE OR REPLACE TABLE usuarios (
+          id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+          email VARCHAR(255) NOT NULL,
+          senha VARCHAR(255) NOT NULL
+          )";
+          
+          if ($conn->query($sql) === TRUE) {
+            echo "Table usuarios created successfully";
+          } else {
+            echo "Error creating table: " . $conn->error;
+          }
+  
+           //inclusão de clientes
+           $sql = "INSERT INTO usuarios (email, senha) VALUES ('jonas@gmail.com', '123')";
+              
+           if ($conn->query($sql) === TRUE) {
+             echo "Inserir usuario feito successfully";
+           } else {
+             echo "Error creating table: " . $conn->error;
+           }
+
+          // sql to create table
+          $sql = "CREATE OR REPLACE TABLE titulos_receber (
+          id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+          id_cliente INT UNSIGNED,
+          valor float,
+          pago float,
+          saldo float,
+          data_emissao date,
+          data_pagamento date,
+          FOREIGN KEY (id_cliente) REFERENCES clientes(id)
+          )";
+          
+          if ($conn->query($sql) === TRUE) {
+            echo "Table titulos_receber created successfully";
+          } else {
+            echo "Error creating table: " . $conn->error;
+          }
+  
+           //inclusão de clientes
+           $sql = "INSERT INTO titulos_receber (id_cliente, valor,pago,saldo,data_emissao,data_pagamento) VALUES ('1','100','10','90','2023-03-01','2023-03-10')";
+              
+           if ($conn->query($sql) === TRUE) {
+             echo "Inserir titulos_receber feito successfully";
+           } else {
+             echo "Error creating table: " . $conn->error;
+           }
+
         $conn->close();
         ?>

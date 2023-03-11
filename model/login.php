@@ -7,7 +7,7 @@
     $password = FILTER_INPUT(INPUT_POST,'password');
 
     if($email && $password){
-        $sql = $conn->prepare("SELECT id, email, senha FROM usuario WHERE LOWER(email)= :email");
+        $sql = $conn->prepare("SELECT id, email, senha FROM usuarios WHERE LOWER(email)= :email");
         $sql->bindValue(':email',strtolower($email));
         $sql->execute();
 

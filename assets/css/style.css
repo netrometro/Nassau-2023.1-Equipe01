@@ -193,7 +193,12 @@
 /* Inicio contas a receber*/
 .containerReceber{
     padding: 10px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
+
+
 .containerReceber header{
     display: flex;
     margin-bottom: 10px;
@@ -210,6 +215,7 @@
     background: var(--green);
     border: none;
     color: black;
+    border-radius: 10px;
 }
 
 .containerReceber header button:hover{
@@ -232,6 +238,14 @@
     padding: 10px;
 }
 
+#tdId{
+  border-radius: 10px 0 0 0;
+}
+
+#tdOpcoes{
+  border-radius: 0 10px 0 0;
+}
+
 .containerReceber .consulta table tr:hover td {
     background-color: #EEE;
 }
@@ -243,6 +257,36 @@ a{
 a:hover{
     background: var(--greenHover);
     border-radius: 10px;
+    color: white
 }
 
+.containerMenu{
+  border: 1px solid var(--greenHover);
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContainerConsulta{
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 10px;
+  background: var(--green);
+  border-radius: 10px;
+}
+
+.ContainerConsulta{
+  border: 1px solid var(--greenHover);
+  padding: 10px;
+  border-radius: 5px;
+}
 /* Fim Titulos receber */

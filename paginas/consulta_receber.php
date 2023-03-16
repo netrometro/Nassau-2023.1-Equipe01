@@ -19,7 +19,7 @@
         <div class="containerMenu">
 
             <a class="btn" href="">Clientes</a>
-            <a class="btn" href="">Fornecedores</a>
+            <a class="btn" href="./fornecedor.php">Fornecedores</a>
             <a class="btn" href="./consulta_receber.php">Receber</a>
             <a class="btn" href="">Pagar</a>
 

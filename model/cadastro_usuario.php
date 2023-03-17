@@ -19,6 +19,8 @@ if($name &&  $email && $password){
         $sql->bindValue(':telefone',$telefone);
         $sql->bindValue(':endereco',$endereco);
         $sql->bindValue(':senha',$password);
+
+        header('Location: ../paginas/index.php');
         $sql->execute();
   
 }

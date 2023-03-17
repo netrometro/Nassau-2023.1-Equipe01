@@ -31,13 +31,18 @@ $conn = null;
             <th>nome</th>
             <th>endereço</th>
             <th>telefone</th>
+            <th>ações</th>
         </tr>
-        <?php
-        foreach(new RecursiveArrayIterator($stmt->fetchAll()) as $k=>$v){
+        <?php foreach(new RecursiveArrayIterator($stmt->fetchAll()) as $k=>$v){
             echo "<tr>";
             echo "<td>".$v["nome"]."</td>";
             echo "<td>".$v["endereco"]."</td>";
             echo "<td>".$v["telefone"]."</td>";
+           echo "<td>
+           <a href='../paginas/edit_usuario.php?id=$v[id]' title='Editar'><img src='../assets/img/edt.png'\></a>
+            <a href='../php/excluirSenha.php?id=$v[id]' title='Deletar'><img src='../assets/img/del.png'\></a>
+            </td>";
+            echo "<tr>";
         }
         ?>
     </table>

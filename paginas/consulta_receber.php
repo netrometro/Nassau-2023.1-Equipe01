@@ -2,7 +2,10 @@
     session_start();
     require('../model/config.php');
 
-    $titulosReceber =  $conn->query("SELECT * FROM titulos_receber");
+    $titulosReceber =  $conn->query("SELECT tr.*,
+                                            c.nome
+                                        FROM titulos_receber tr
+                                        inner join clientes c on c.id = tr.id_cliente ");
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +20,7 @@
 <body> 
     <div class="containerReceber"> 
         <div class="containerMenu">
-
+            <a class="btn" href="./main.php">Início</a>
             <a class="btn" href="">Clientes</a>
             <a class="btn" href="./fornecedor.php">Fornecedores</a>
             <a class="btn" href="./consulta_receber.php">Receber</a>
@@ -41,12 +44,12 @@
                     <?php foreach($titulosReceber as $receber): ?>
                         <tr>
                             <td><?=$receber['id']?></td>
-                            <td><?=$receber['id_cliente']?></td>
+                            <td><?=$receber['nome']?></td>
                             <td><?=$receber['valor']?></td>
                             <td><?=$receber['pago']?></td>
                             <td><?=$receber['saldo']?></td>
                             <td>
-                                <a href="../model/processa_consulta_receber.php?editar=sim&id=<?=$receber['id']?>">
+                                <a href="../model/cadastro_receber.php?id=<?=$receber['id']?>">
                                     <img width="20" src="../assets/img/edt.png" alt="botão editar registro.">
                                 </a>
                                 <a  href="../model/processa_consulta_receber.php?excluir=sim&id=<?=$receber['id']?>" 

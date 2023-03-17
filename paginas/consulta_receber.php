@@ -2,7 +2,10 @@
     session_start();
     require('../model/config.php');
 
-    $titulosReceber =  $conn->query("SELECT * FROM titulos_receber");
+    $titulosReceber =  $conn->query("SELECT tr.*,
+                                            c.nome
+                                        FROM titulos_receber tr
+                                        inner join clientes c on c.id = tr.id_cliente ");
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +44,7 @@
                     <?php foreach($titulosReceber as $receber): ?>
                         <tr>
                             <td><?=$receber['id']?></td>
-                            <td><?=$receber['id_cliente']?></td>
+                            <td><?=$receber['nome']?></td>
                             <td><?=$receber['valor']?></td>
                             <td><?=$receber['pago']?></td>
                             <td><?=$receber['saldo']?></td>

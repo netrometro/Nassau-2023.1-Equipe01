@@ -28,20 +28,23 @@
     width: 100%;
 }
 
-.containerFornecedor header button{
+.containerFornecedor header .button{
     height: 40px;
     width: 200px;
 }
 
 
-.containerFornecedor header button{
+.containerFornecedor header .button{
+    display: flex;
     background: var(--green);
     border: none;
     color: black;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-.containerFornecedor header button:hover{
+.containerFornecedor header .button:hover{
     background: var(--greenHover);
     border: none;
     color: white;

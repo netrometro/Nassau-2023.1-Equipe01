@@ -51,7 +51,13 @@ body{
 
 /* ====== Posição do Formulario ====== */
 #formulario{
-    padding-left: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-formulario{
+    font-size: 23px;
 }
 /* ======================== */
 

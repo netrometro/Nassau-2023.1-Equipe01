@@ -1,10 +1,13 @@
 <?php
-require('../model/config.php');
+require('Config.php');
 
 try {
  
   // sql to delete a record
-  $sql = "DELETE FROM clientes WHERE id=:id";
+  $id = $_GET['id'];
+
+
+  $sql = "DELETE FROM clientes WHERE id=". $id;
 
   // use exec() because no results are returned
   $conn->exec($sql);
@@ -13,7 +16,6 @@ try {
   echo $sql . "<br>" . $e->getMessage();
 }
 
-header('Location: ../model/clientes.php');
+header('Location: ../paginas/consulta_clientes.php');
 
-$conn = null;
 ?>

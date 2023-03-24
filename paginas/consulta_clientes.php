@@ -40,7 +40,7 @@ $conn = null;
             echo "<td>".$v["telefone"]."</td>";
            echo "<td>
            <a href='../paginas/edit_usuario.php?id=$v[id]' title='Editar'><img src='../assets/img/edt.png'\></a>
-            <a href='../model/.php?id=$v[id]' title='Deletar'><img src='../assets/img/del.png'\></a>
+            <a href='../model/clientesdelete.php?id=$v[id]' title='Deletar'><img src='../assets/img/del.png'\></a>
             </td>";
             echo "<tr>";
         }

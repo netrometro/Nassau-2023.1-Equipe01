@@ -15,6 +15,6 @@
         $stmt = $conn->query($sql);
         $stmt->execute();
     }
-    header('Location: ../model/clientes.php');
+    header('Location: ../paginas/consulta_clientes.php');
 
 ?>

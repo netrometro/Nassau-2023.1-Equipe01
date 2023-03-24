@@ -1,6 +1,6 @@
 <?php
 
- require('Config.php');
+ require('../model/Config.php');
 try {
  $stmt = $conn->prepare("SELECT * FROM clientes");
 $stmt->execute();

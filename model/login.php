@@ -19,7 +19,9 @@
                 header('Location: ../paginas/main.php');
             } 
          }
+    }else {
+        //se não foi redirecionado para o main então vá para login de novo
+        header('Location: ../'); 
     }
-    //se não foi redirecionado para o main então vá para login de novo
-    //header('Location: ../');
+
 ?>

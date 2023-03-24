@@ -28,8 +28,9 @@
 
         </div> 
         <div class="ContainerConsulta">
+            <h1>Consulta títulos a receber</h1><br>
             <header>
-                <button>Novo título</button>
+                <a href="./cadastro_receber.php">Novo título</a>
             </header>
             <div class="consulta">
                 <table border="1" width="100%">
@@ -49,7 +50,7 @@
                             <td><?=$receber['pago']?></td>
                             <td><?=$receber['saldo']?></td>
                             <td>
-                                <a href="../model/cadastro_receber.php?id=<?=$receber['id']?>">
+                                <a href="./cadastro_editar_receber.php?id=<?=$receber['id']?>">
                                     <img width="20" src="../assets/img/edt.png" alt="botão editar registro.">
                                 </a>
                                 <a  href="../model/processa_consulta_receber.php?excluir=sim&id=<?=$receber['id']?>" 

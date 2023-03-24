@@ -290,3 +290,21 @@ a:hover{
   border-radius: 5px;
 }
 /* Fim Titulos receber */
+
+
+/* main */
+.ContainerMain{
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--greenHover);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContainerMain img{
+  width: 20%;
+}

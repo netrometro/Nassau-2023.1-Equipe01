@@ -105,5 +105,28 @@
              echo "Error creating table: " . $conn->error;
            }
 
+          // sql to create table
+          $sql = "CREATE OR REPLACE TABLE fornecedor (
+            id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            nome varchar(100),
+            telefone varchar(50),
+            cpf varchar(50)
+            )";
+            
+            if ($conn->query($sql) === TRUE) {
+              echo "Table titulos_receber created successfully";
+            } else {
+              echo "Error creating table: " . $conn->error;
+            }
+    
+             //inclusão de clientes
+             $sql = "INSERT INTO fornecedor (nome, telefone, cpf) VALUES ('Rafael','940028922','12345678910')";
+                
+             if ($conn->query($sql) === TRUE) {
+               echo "Inserir titulos_receber feito successfully";
+             } else {
+               echo "Error creating table: " . $conn->error;
+             }
+
         $conn->close();
         ?>

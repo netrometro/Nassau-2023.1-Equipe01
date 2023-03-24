@@ -12,7 +12,7 @@
 
          if($sql->rowCount() > 0 ){
             $user = $sql->fetch( PDO::FETCH_ASSOC);
-
+   
             if($user['senha'] === $password){
                 $_SESSION['token'] = md5($user['email']);
                 $_SESSION['userName'] = $user['email'];
@@ -21,5 +21,5 @@
          }
     }
     //se não foi redirecionado para o main então vá para login de novo
-    header('Location: ../');
+    //header('Location: ../');
 ?>

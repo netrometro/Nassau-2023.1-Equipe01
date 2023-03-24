@@ -1,8 +1,8 @@
 <?php
-$user       = "root";
+$user      = "root";
 $password  = "";
-$host       = "localhost";  
-$database   = "db_chashlock";
+$host      = "localhost";  
+$database  = "db_chashlock";
 
 $conn = new PDO("mysql:host=$host;dbname=$database", $user, $password);
 

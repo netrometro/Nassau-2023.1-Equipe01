@@ -1,3 +1,12 @@
+<?php 
+    require('../model/config.php');
+
+    $sql = $conn->prepare("SELECT id, nome FROM clientes");
+    $sql->execute();
+    $cadastroClientes = $sql->fetchAll(PDO::FETCH_ASSOC);
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +29,19 @@
         </div> 
         <div class="ContainerConsulta">
             <h1>Cadastrar novo títulos a receber</h1><br>
-            <form method="POST" action="receber.php">
-                    <input type="hidden" name="id" value=""/>
-                    
-                    Nome: <br>
-                    <input type="text" name="nome" readonly value=""/><br><br>
-                    Valor: <br>
-                    <input type="text" name="valor" value=""/><br><br>
-                    Pago: <br>
-                    <input type="text" name="pago" value=""/><br><br>
-                    Saldo: <br>
-                    <input type="text" name="saldo" value=""/><br><br>
+            <form method="POST" action="../model/add_receber.php">
+                Nome: <br>
+                <select class="combobox" name="cliente">
+                    <?php foreach($cadastroClientes as $cliente): ?>
+                        <option name="idCliente" value="<?=$cliente['id']?>"><?=$cliente['nome']?></option>
+                    <?php endforeach;?>
+                </select><br>
+                Valor: <br>
+                <input type="text" name="valor" value=""/><br><br>
+                Pago: <br>
+                <input type="text" name="pago" value=""/><br><br>
+                Saldo: <br>
+                <input type="text" name="saldo" value=""/><br><br>
                 <input type="submit" name="update" value="Cadastrar conta">
             </form>
         </div>

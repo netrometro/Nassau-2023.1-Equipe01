@@ -41,7 +41,7 @@
         </div> 
         <div class="ContainerConsulta">
             <h1>Editar títulos a receber</h1><br>
-            <form method="POST" action="edit_receber.php">
+            <form method="POST" action="../model/edit_receber.php">
                     <input type="hidden" name="id" value="<?=$cadastro['id']?>"/>
                     
                     Nome: <br>

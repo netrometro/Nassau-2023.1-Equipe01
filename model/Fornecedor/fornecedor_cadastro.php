@@ -1,5 +1,4 @@
 <?php
-
     require('../config.php');
 
     $name = FILTER_INPUT(INPUT_POST,'nome');

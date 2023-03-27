@@ -205,20 +205,25 @@
     width: 100%;
 }
 
-.containerReceber header button{
+.containerReceber header a{
     height: 40px;
     width: 200px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 
-.containerReceber header button{
+.containerReceber header a{
     background: var(--green);
     border: none;
     color: black;
     border-radius: 10px;
 }
 
-.containerReceber header button:hover{
+.containerReceber header a:hover{
     background: var(--greenHover);
     border: none;
     color: white;
@@ -288,6 +293,14 @@ a:hover{
   border: 1px solid var(--greenHover);
   padding: 10px;
   border-radius: 5px;
+}
+
+.combobox {
+  width: 100%;
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 /* Fim Titulos receber */
 

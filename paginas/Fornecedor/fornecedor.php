@@ -21,7 +21,7 @@
 
             <a class="btn" href="../main.php">Main</a>
             <a class="btn" href="">Clientes</a>
-            <a class="btn" href="./consulta_receber.php">Receber</a>
+            <a class="btn" href="../consulta_receber.php">Receber</a>
             <a class="btn" href="">Pagar</a>
 
         </div> 
@@ -43,10 +43,10 @@
                             <td><?=$receber['cpf']?></td>
                             <td><?=$receber['telefone']?></td>
                             <td>
-                                <a href="../model/processa_consulta_receber.php?editar=sim&id=<?=$receber['id']?>">
+                                <a href="fornecedor_editar.php?id=<?=$receber['id']?>">
                                     <img width="20" src="../../assets/img/edt.png" alt="botão editar registro.">
                                 </a>
-                                <a  href="../model/processa_consulta_receber.php?excluir=sim&id=<?=$receber['id']?>" 
+                                <a  href="../model/processa_consulta_receber.php?id=<?=$receber['id']?>" 
                                     onclick="return confirm('Tem certeza que deseja excluir este registro?')">
                                     <img width="20" src="../../assets/img/del.png" alt="botão excluir registro.">
                                 </a>    

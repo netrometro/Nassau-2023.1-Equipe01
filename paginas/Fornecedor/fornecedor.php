@@ -46,10 +46,10 @@
                                 <a href="fornecedor_editar.php?id=<?=$receber['id']?>">
                                     <img width="20" src="../../assets/img/edt.png" alt="botão editar registro.">
                                 </a>
-                                <a  href="../model/processa_consulta_receber.php?id=<?=$receber['id']?>" 
+                                <a  href="../../model/Fornecedor/fornecedor_excluir.php?id=<?=$receber['id']?>" 
                                     onclick="return confirm('Tem certeza que deseja excluir este registro?')">
                                     <img width="20" src="../../assets/img/del.png" alt="botão excluir registro.">
-                                </a>    
+                                </a>     
                             </td>
                         </tr>
                     <?php endforeach;?>

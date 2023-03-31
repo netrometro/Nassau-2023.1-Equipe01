@@ -30,13 +30,6 @@
           <input type="text" name="telefone" placeholder="Insira telefone do cliente">
         </div>
 
-
-        <!--
-        <div class="meia-linha">
-          <label for="passwordconfirm">Confirmar senha</label>
-          <input type="password" name="passwordconfirm" placeholder="Insira a senha">
-        </div>
-        -->
         <div class="linha-completa">
           <input id="btn-submit" type="submit" value="Adicionar">
         </div>

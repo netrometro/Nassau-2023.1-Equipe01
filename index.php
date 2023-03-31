@@ -22,6 +22,8 @@
             <input type="email" placeholder="Digite seu email" name="email">
             <input type="password" placeholder="Digite seu senha" name="password">
             <input type="submit" value="Entrar">
+
+            <a class="btn" href="./paginas/cadastro_usuario.php">Não é registrado ? cadastre-se</a>
         </form>
         <footer>
             <h6>Professor Ewerton - Projeto: CashLock - Alunos: Jonas, Valdênio e Rafael</h6>

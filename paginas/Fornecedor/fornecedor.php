@@ -20,9 +20,9 @@
         <div class="containerMenu">
 
             <a class="btn" href="../main.php">Main</a>
-            <a class="btn" href="">Clientes</a>
+            <a class="btn" href="../consulta_clientes.php">Clientes</a>
             <a class="btn" href="../consulta_receber.php">Receber</a>
-            <a class="btn" href="">Pagar</a>
+            <a class="btn" href="../consulta_pagar.php">Pagar</a>
 
         </div> 
         <div class="ContainerFornecedor">

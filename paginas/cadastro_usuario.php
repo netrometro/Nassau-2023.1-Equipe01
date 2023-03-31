@@ -16,28 +16,8 @@
     <form id="register-form" action="../model/cadastro_usuario.php" method="POST">
       
         <div class="linha-completa">
-            <label for="nome">Nome do usuário</label>
-            <input type="text" name="nome" placeholder="Insira seu nome">
-        </div>
-
-        <div class="linha-completa">
             <label for="e-mail">E-mail</label>
             <input type="email" name="email" placeholder="Insira seu e-mail">
-        </div>
-
-        <div class="meia-linha espaçamento">
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" placeholder="Insira seu CPF">
-        </div>
-
-        <div class="meia-linha">
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" placeholder="Insira seu telefone">
-        </div>
-
-        <div class="linha-completa">
-          <label for="endereco">Endereço</label>
-          <input type="text" name="endereco" placeholder="Insira seu endereço">
         </div>
 
         <div class="meia-linha espaçamento">
@@ -46,7 +26,7 @@
         </div>
 
         <div class="linha-completa">
-          <input id="btn-submit" type="submit" value="Cadastrar" >
+          <input id="btn-submit" type="submit" value="Cadastrar">
         </div>
       
     </form>

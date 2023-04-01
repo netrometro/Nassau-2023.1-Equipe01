@@ -30,7 +30,7 @@
     <title>Formulário</title>
 </head>
 <body>
-<div class="containerReceber"> 
+    <div class="containerReceber"> 
         <div class="containerMenu">
             <a class="btn" href="./main.php">Início</a>
             <a class="btn" href="">Clientes</a>

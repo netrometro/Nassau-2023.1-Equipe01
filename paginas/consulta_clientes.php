@@ -35,6 +35,7 @@ $conn = null;
             <a class="btn" href="./consulta_pagar.php">Pagar</a>
         </div> 
         <div class="ContainerConsulta">
+            <h1>Clientes</h1><br>
             <header>
                   <a href="./clientesadd.php" title="Adicionar">Novo cliente</a>
             </header>

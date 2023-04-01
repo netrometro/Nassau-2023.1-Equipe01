@@ -19,13 +19,14 @@
     <div class="containerFornecedor"> 
         <div class="containerMenu">
 
-            <a class="btn" href="../main.php">Main</a>
+            <a class="btn" href="../main.php">Início</a>
             <a class="btn" href="../consulta_clientes.php">Clientes</a>
             <a class="btn" href="../consulta_receber.php">Receber</a>
             <a class="btn" href="../consulta_pagar.php">Pagar</a>
 
         </div> 
         <div class="ContainerFornecedor">
+            <h1>Fornecedores</h1><br>
             <header>
                 <a class=button href="./fornecedor_cadastro.php">Novo Cadastro</a>
             </header>
